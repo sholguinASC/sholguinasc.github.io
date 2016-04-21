@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>String key was not found!</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+
+<!--YUI CSS-->
+
+<link rel="stylesheet" type="text/css" href="/struts/xhtml/styles.css">
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/assets/skins/sam/skin.css">
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/paginator/assets/skins/sam/paginator.css">
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/datatable/assets/skins/sam/datatable.css">
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/container/assets/container.css">
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/button/assets/skins/sam/button.css">
+<link rel="stylesheet" type="text/css" href="/scripts/glowbutton-min.css">
+
+<link rel="stylesheet" type="text/css" href="/scripts/course-prereqs/CourseRequests.css">
+<!--Normal CSS-->
+
+<link href="/images/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/images/css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+</style>
+<style id="psDialogHideTillReady">
+.dialog, .dialogC, .dialogM, .dialogR, .dialogF, .dialogDiv, .dialogDivC, .dialogDivM, .replaceNext { visibility: hidden;}
+</style>
+<!-- ServerInstanceId: 4 -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.common.sign_in"] = "Sign In";_messages["psx.common.district_abbreviation"] = "District";_messages["psx.common.daynamesmin_wed"] = "We";_messages["psx.common.daynamesletter_wed"] = "W";_messages["psx.common.daynamesmin_tue"] = "Tu";_messages["psx.common.daynamesmin_sun"] = "Su";_messages["psx.common.daynamesmin_thu"] = "Th";_messages["psx.common.daynamesletter_tue"] = "T";_messages["psx.common.daynamesletter_thu"] = "H";_messages["psx.common.daynamesmin_sat"] = "Sa";_messages["psx.common.district"] = "District Office";_messages["psx.common.sign_in_title"] = "Sign In";_messages["psx.common.daynamesletter_sat"] = "S";_messages["psx.common.daynamesletter_sun"] = "S";_messages["psx.common.daynamesshort_wed"] = "Wed";_messages["psx.common.changes_recorded"] = "The changes have been recorded.";_messages["psx.common.sign_out"] = "Sign Out";_messages["psx.common.daynamesletter_mon"] = "M";_messages["psx.common.daynamesshort_sat"] = "Sat";_messages["psx.common.daynamesshort_sun"] = "Sun";_messages["psx.common.daynamesshort_tue"] = "Tue";_messages["psx.common.daynamesshort_thu"] = "Thu";_messages["psx.common.monthnamesshort_sep"] = "Sep";_messages["psx.common.daynamesmin_fri"] = "Fr";_messages["psx.common.daynamesletter_fri"] = "F";_messages["psx.common.mydata_button_title"] = "MyData Button";_messages["psx.common.help_title"] = "Help";_messages["psx.common.translate_page_title"] = "Localize Page";_messages["psx.common.school"] = "School:";_messages["psx.common.monthnamesshort_jan"] = "Jan";_messages["psx.common.school_title"] = "Change School";_messages["psx.common.monthnamesshort_jul"] = "Jul";_messages["psx.common.monthnamesshort_jun"] = "Jun";_messages["psx.common.legend"] = "Legend ";_messages["psx.common.monthnamesshort_nov"] = "Nov";_messages["psx.common.daynamesmin_mon"] = "Mo";_messages["psx.common.monthnamesshort_oct"] = "Oct";_messages["psx.common.monthnamesshort_mar"] = "Mar";_messages["psx.common.monthnamesshort_may"] = "May";_messages["psx.common.monthnames_dec"] = "December";_messages["psx.common.monthnamesshort_dec"] = "Dec";_messages["psx.common.scheduling_year"] = "Scheduling Year";_messages["psx.common.monthnamesshort_feb"] = "Feb";_messages["psx.common.monthnames_aug"] = "August";_messages["psx.common.monthnames_apr"] = "April";_messages["psx.common.term"] = "Term:";_messages["psx.common.daynames_fri"] = "Friday";_messages["psx.common.term_title"] = "Change Term";_messages["psx.common.general.problem"] = "Unable to process the request.  Please contact your system administrator to review logs.";_messages["psx.common.monthnamesshort_apr"] = "Apr";_messages["psx.common.monthnamesshort_aug"] = "Aug";_messages["psx.common.monthnames_feb"] = "February";_messages["psx.common.print_title"] = "Print this page";_messages["psx.common.monthnames_mar"] = "March";_messages["psx.common.monthnames_may"] = "May";_messages["psx.common.monthnames_jun"] = "June";_messages["psx.common.monthnames_jul"] = "July";_messages["psx.common.loading"] = "Loading...";_messages["psx.common.monthnames_jan"] = "January";_messages["psx.common.monthnames_oct"] = "October";_messages["psx.common.monthnames_nov"] = "November";_messages["psx.common.sign_out_title"] = "Sign Out";_messages["psx.common.welcome"] = "Welcome,";_messages["psx.common.monthnames_sep"] = "September";_messages["psx.common.daynames_wed"] = "Wednesday";_messages["psx.common.daynames_thu"] = "Thursday";_messages["psx.common.daynamesshort_mon"] = "Mon";_messages["psx.common.daynames_tue"] = "Tuesday";_messages["psx.common.help"] = "Help";_messages["psx.common.daynames_sun"] = "Sunday";_messages["psx.common.daynamesshort_fri"] = "Fri";_messages["psx.common.daynames_sat"] = "Saturday";_messages["psx.common.copyright"] = "Copyright&copy; 2005 - 2014 Pearson Education, Inc., or its affiliate(s). All rights reserved.";_messages["psx.common.daynames_mon"] = "Monday";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.psbehaviors.no"] = "No";_messages["psx.js.scripts.psbehaviors.on"] = "On";_messages["psx.js.scripts.psbehaviors.or"] = "or";_messages["psx.js.scripts.psbehaviors.wiznext"] = "Next";_messages["psx.js.scripts.psbehaviors.time_entry_x"] = "Time Entry ({0})";_messages["psx.js.scripts.psbehaviors.recording_cancel"] = "Cancel Recording";_messages["psx.js.scripts.psbehaviors.time_entry"] = "Time Entry";_messages["psx.js.scripts.psbehaviors.report_an_issue"] = "Report an Issue";_messages["psx.js.scripts.psbehaviors.prevtext"] = "Prev";_messages["psx.js.scripts.psbehaviors.wizprevious"] = "Previous";_messages["psx.js.scripts.psbehaviors.closetext"] = "Done";_messages["psx.js.scripts.psbehaviors.reload_last_page"] = "Reload Last Page";_messages["psx.js.scripts.psbehaviors.enrollment_alert"] = "The student you are attempting to enroll has an existing record in the district. Click OK, then proceed to transfer the student to your school if necessary.";_messages["psx.js.scripts.psbehaviors.currenttext"] = "Today";_messages["psx.js.scripts.psbehaviors.interval_hour"] = "hour only interval";_messages["psx.js.scripts.psbehaviors.would_you_like_to_reload_the_last_page_you_were_viewing"] = "Your session timed out due to inactivity. Would you like to restore your previous session and reload the last page you were viewing?";_messages["psx.js.scripts.psbehaviors.cancel"] = "Cancel";_messages["psx.js.scripts.psbehaviors.nexttext"] = "Next";_messages["psx.js.scripts.psbehaviors.restore_selections_school_and_term"] = "Restore Selection(s), School and Term";_messages["psx.js.scripts.psbehaviors.noaccess"] = "No Field Access";_messages["psx.js.scripts.psbehaviors.no_match_found"] = "No match found";_messages["psx.js.scripts.psbehaviors.added"] = "Added";_messages["psx.js.scripts.psbehaviors.interval_thirty"] = "30 minute interval";_messages["psx.js.scripts.psbehaviors.deleted_xx"] = "Deleted: {0}";_messages["psx.js.scripts.psbehaviors.interval_fifteen"] = "15 minute interval";_messages["psx.js.scripts.psbehaviors.deleted"] = "Deleted";_messages["psx.js.scripts.psbehaviors.delete"] = "Delete";_messages["psx.js.scripts.psbehaviors.icons"] = "Icons";_messages["psx.js.scripts.psbehaviors.show_main_menu"] = "Show Main Menu";_messages["psx.js.scripts.psbehaviors.confirm"] = "Confirm ";_messages["psx.js.scripts.psbehaviors.wizstep"] = "Step";_messages["psx.js.scripts.psbehaviors.show_header"] = "Show Header";_messages["psx.js.scripts.psbehaviors.hide_header"] = "Hide Header";_messages["psx.js.scripts.psbehaviors.interval_five"] = "5 minute interval";_messages["psx.js.scripts.psbehaviors.date_entry"] = "Date Entry";_messages["psx.js.scripts.psbehaviors.confirm_delete"] = "Confirm Delete";_messages["psx.js.scripts.psbehaviors.off"] = "Off";_messages["psx.js.scripts.psbehaviors.would_you_like_to_restore_your_selections_school_and_term"] = "Your session timed out due to inactivity. Would you like to restore your previous session and return to the last used school, term, student and/or teacher selection?";_messages["psx.js.scripts.psbehaviors.send_report"] = "Report Issue";_messages["psx.js.scripts.psbehaviors.recording_stop"] = "Finish Recording";_messages["psx.js.scripts.psbehaviors.n_characters_left"] = "{0} characters left";_messages["psx.js.scripts.psbehaviors.about_n_characters_left"] = "Approximately {0} characters left";_messages["psx.js.scripts.psbehaviors.legend"] = "Legend";_messages["psx.js.scripts.psbehaviors.hide_main_menu"] = "Hide Main Menu";_messages["psx.js.scripts.psbehaviors.recording_start"] = "Start Recording";_messages["psx.js.scripts.psbehaviors.add_issue_comment"] = "Add Issue Comment";_messages["psx.js.scripts.psbehaviors.required"] = "Required Field";_messages["psx.js.scripts.psbehaviors.yes"] = "Yes";_messages["psx.js.scripts.psbehaviors.main_navigation"] = "Main Navigation";_messages["psx.js.scripts.psbehaviors.confirmbanner.schoolstaff_removed"] = "The previously selected staff member was successfully removed from this school.";_messages["psx.js.scripts.psbehaviors.added_xx"] = "Added: {0}";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+
+	<script src="/scripts/jquery-1.9.1.min.js"></script>
+	<script src="/scripts/jquery-migrate-1.1.1.min.js"></script>
+	<script src="/scripts/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="/scripts/requirejs/require.js"></script>
+
+
+<!--[if lt IE 7]><script>jQuery('html').data('ltie', 7.addClass('ltie7');;</script><![endif]-->
+<!--[if lt IE 8]<script>jQuery('html').data('ltie', 8).addClass('ltie8');;</script><![endif]-->
+<!--[if lt IE 9]><script>jQuery('html').data('ltie', 9).addClass('ltie9');</script><![endif]-->
+
+<script type="text/javascript" >
+  var feedbackEnabled = false
+  var recordingActivated = false
+</script>
+
+<script src="/scripts/psDialog.js"></script>
+<script type="text/javascript">
+/**
+ * Need to configure require js before psbehaviors.
+ */
+require.config({
+    	baseUrl: "/scripts/",
+    	paths: {
+    		'handlebars':                'handlebars/require-handlebars.1.0.0.rc3',
+    		'json2':                     'handlebars/json2',
+    		'hbs':                       'hbs/0.4.0/hbs',
+    		'underscore':                'underscore/underscore-'+'min'+'-1.4.4',
+    		'backbone':                  'backbone/backbone-'+'min'+'-0.9.10',
+    		'jquery.cookie':             'jquery.cookie',
+    		'psDateValidate':            'psDateValidate',
+    		'psDateWidget':              'psDateWidget',
+    		'psDirtyStateController':    'psDirtyStateController',
+    		'psFormValidate':            'psFormValidate',
+    		'psNumWidget':               'psNumWidget',
+    		'psReloader/psReloader-min': 'psReloader/psReloader-min',
+    		'psRequired':                'psRequired',
+    		'psTextWidget':              'psTextWidget',
+    		'psValidationFunctions':     'psValidationFunctions',
+    		//'angular':                   'lib/angular/angular',
+            'angular':                   'lib/angular/angular.min',
+            'angular-cookies':           'lib/angular/angular-cookies.min',
+            'angular-route':             'lib/angular/angular-route.min',
+            'angular-sanitize':          'lib/angular/angular-sanitize',
+            'angular-translate':         'lib/angular/angular-translate.min',
+        },
+
+        hbs: {
+            disableI18n: true
+        },
+
+        shim: {
+            'underscore': {
+                exports: '_'
+            },
+            'backbone': {
+                exports: 'Backbone',
+                deps: ['underscore']
+            },
+            'angular': {
+                exports: 'angular'
+            },
+            'angular-translate':{
+                deps: ['angular']
+            },
+            'angular-sanitize':{
+                deps: ['angular']
+            },
+            'angular-route':{
+                deps: ['angular']
+            },
+            'angular-cookies':{
+                deps: ['angular']
+            }
+        },
+
+        map: {
+            '*': {
+                'Handlebars': 'handlebars'
+            }
+        },
+        priority: [
+              'angular'
+        ]    });
+define('jquery', function () {
+	return jQuery;
+});
+define('jquery-ui', ['jquery'], function($) {
+	return $.ui;
+});
+</script>
+<script src="/scripts/psbehaviors.js"></script>
+
+<script src="/scripts/keep-alive.js"></script>
+
+
+<!-- Frame type=none --><meta id="keep-alive-config" content="60"/>
+
+<script type="text/javascript">
+
+/**
+ * Set the page's locale via a request_locale URL parameter. If there is already a URL parameter by
+ * this name, then substitute it with the passed-in locale. NOTE: This function will actually cause the page
+ * to be re-submitted with the new locale, so it really should not be used with pages submitted via POST
+ * requests (if there are any, which I hope there are not).
+ * @param locale the locale to set (e.g. en_US)
+ */
+function setPageLocale (locale) {
+  var c=String (window.location);
+  var rlpos = c.indexOf("request_locale=");
+  var afterPart = "";
+  if (rlpos > 0) {
+    var afterBegin = c.indexOf("&", rlpos);
+    if (afterBegin > 0) {
+      afterPart = c.substring(afterBegin);
+    }
+    c = c.substring(0, rlpos-1);
+  }
+  var s=(c.indexOf('?') > 0 ? '&' : '?');
+  var np = c + s + 'request_locale=' + locale + afterPart;
+  window.location = np;
+}
+
+function get_locale() {
+  return "en_US";
+}
+
+function checkForPTMURL() {
+	if ($j && $j.cookie && $j.cookie('PTM_URL')!=null 
+		&& window.location!=$j.cookie('PTM_URL')
+		&& !window.location.href.match("/teachers/pw.html") ) {
+			var path = $j.cookie('PTM_URL');
+			$j.cookie('PTM_URL',null, { path: '/', expires: -1 });
+			window.location.replace(path);
+	}
+}
+
+
+if(typeof pss_text!='function'){
+function pss_text(key, params, returnKeyIfNotFound) {
+	if (_messages[key] === undefined)
+	{
+		if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {
+			return key;
+		} else {
+			return "String key was not found!";
+		}
+	}
+	if(params == null || params.length == 0)
+	{
+  		return _messages[key];
+	}
+	else
+	{
+		msg = _messages[key];
+		for ( i = 0; i < params.length; i++)
+		{
+			token = "{"+i+"}";
+			msg = msg.replace(token, params[i]);
+		}
+		return msg;
+	}
+}
+}
+
+function get_localized_date(d, fmt) {
+   if (fmt === "mmdd") return ("" + (d.getMonth()+1) + "/" + d.getDate() + "");
+   return ("" + (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear() + "");
+}
+
+
+// Format is a formatting object
+// number is number object
+function formatNumber(format, number)
+{
+	var ds = format.ds; // decimal separator
+	var result = "";
+
+	if (isNaN(number) == true)
+	{
+		return number
+	}
+	else
+	{
+		result = number.toString();
+		result = result.replace(".",ds);
+		return result;
+	}
+}
+
+function localizeNumber(number)
+{
+	return formatNumber(get_numeric_format(), number);
+}
+
+function deLocalizeNumber(number) {
+	return removeNumberFormat(get_numeric_format(), number);
+}
+
+function removeNumberFormat(format, number) {
+	// IE does not like instantiating RegExp objects with empty values, so we have to
+	// check for valid values in the grouping separator before using it in a RegExp.
+	var gsNotBlank = (format.gs == "." || format.gs == "," || format.gs == " ");
+	number = number.toString();
+	// We also want to check that only valid characters are present.
+	var regexString = "^" + format.regex + "$";
+	var validNumber = new RegExp(regexString, "g");
+	if (number != "" && number.match(validNumber) != null) {
+		if (gsNotBlank) {
+			var gs = new RegExp("\\"+format.gs, "g");
+			number = number.replace(gs, "")
+		}
+		var ds = new RegExp("\\"+format.ds, "g"); //The decimal separator is not expected to be empty
+		number = parseFloat(number.replace(ds, "."));
+	} else {
+		return null;
+	}
+	return (isNaN(number)) ? null : number;
+}
+
+function localizeCurrency(number)
+{
+	return formatNumber(get_currency_format(), number);
+}
+
+<!-- This function return a json object with numeric formatting info -->
+function get_numeric_format() {
+   return  { format: '#,##0.#########', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return a json object with currency formating info -->
+function get_currency_format() {
+   return  { format: '#,##0.00', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return date format in machine readable form -->
+function get_short_date_format() {
+   return "M/d/yy";
+}
+<!-- This function return date format in machine readable form -->
+function get_date_format() {
+   return "MM/dd/yyyy";
+}
+
+<!-- This function return date format in human readable form -->
+function get_date_text(){
+  	return "MM/DD/YYYY";
+}
+<!-- This function return date format in human readable form -->
+function get_short_date_text(){
+	return "MM/DD/YY";
+}
+
+<!-- This function return time format in machine readable form without seconds-->
+function get_HHMMTime_format() {
+   return "hh:mm a";
+}
+
+<!-- This function return time format in machine readable form with seconds-->
+function get_HHMMSSTime_format() {
+   return "hh:mm:ss a";
+}
+
+<!-- This function return ante/post meridian in machine readable form -->
+function get_AMPM(ampm) {
+	if(ampm == "am")
+   		return "AM";
+   	else
+   		return "PM";
+}
+
+if(!_messages) var _messages = {};
+/**
+ * Get texts from the server based on a prefix.
+ * @param prefix the prefix to use
+ * @param onlyIfNotPresent (optional) if passed, check to see if message is present yet; only fetch the
+ *   texts from the server if this key is not present
+ */
+function pss_get_texts(prefix, onlyIfNotPresent) {
+  if (onlyIfNotPresent && _messages[onlyIfNotPresent]) return;
+
+  jQuery.ajax ({async: false,
+    url:'/getMessages.action',
+    data:{prefix: prefix, locale: get_locale()},
+    dataType:'json',
+    success: function (msgs) {
+      jQuery.each(msgs, function (key, value) {
+        _messages[key] = value;
+      });
+    }
+  });
+}
+
+function alertwindow (directory, alerttype, frn) {
+	w = window.open("/"+directory+"/alerts/"+alerttype+"alert.html?frn="+frn, "alert", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=350,height=250");
+}
+
+function helpwindow (url) {
+	w = window.open(url, "help", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=570,height=500");
+}
+
+function helptext (text) {
+	window.status = text;
+	return true;
+}
+
+function openSpecialWeighting(opener) {
+var path = "";
+if (opener == "admin"){
+		path = "/admin/students/specialweighting.html";
+	}else if (opener == "parent"){
+		path = "/guardian/specialweighting.html";
+	}else if (opener == "teacher"){
+		path = "/teachers/studentpages/specialweighting.html";
+	}
+	window.open(path, 'Weighting', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes');
+
+}
+
+function openScaleTranslation() {
+	var path="/admin/stdconversiontable/scaletranslation.html";
+	window.open(path, 'Scale_Translation', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes,resizable=1');
+}
+
+function alertcommentwindow(studentid, sectionid, asmtid) {
+	window.open("scorecomment.html?ac=scorecomment&studentid=" + studentid + "&sectionid=" + sectionid + "&asmtid=" + asmtid, "Score", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=480,height=480");
+}
+
+function feedbackwindow () {
+	window.showModalDialog('/getFeedback.action','send_feedback','dialogWidth:640px; dialogHeight:500px; scroll:no;');
+}
+
+function $(id) {
+	return document.getElementById(id);
+}
+
+//line breaks are 2 chracters on the backend (\r\n)
+//IE treats them as 2 already but FF and Safari treat them
+//as one (\n only). This will ensure all browsers are counting line
+//breaks as 2
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function realLength(str) {
+	if (!str)
+		return 0;
+
+	//replace \r with empty string (this will only be matched on IE)
+	var temp = str.replace(/\r/g, "");
+
+	//find all occurances of newlines (\n)
+	var lns = temp.match(/\n/g);
+
+	if (lns)
+		//if we had any newlines, do this hokie pokie to consistently count them as two
+		return temp.length + lns.length;
+	else
+		//else no newlines, we can just use the strings actual length
+		return str.length;
+}
+
+
+// trim function that truncates off the end of stringCopy until the string is less than
+// maxlimit. Treats any new line (\n or \r\n) as two characters when trimmed
+// off the end.
+// stringCount should be calcuated by the function realLength. The value is either the
+// length of stringCopy in chracters if isUnicode == false, or the length in bytes
+// if isUnicode == true.
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function trimToSize (stringCopy, stringCount, maxlimit, isUnicode) {
+
+	var last_char;
+	var secondToLast_char;
+	var curval = stringCopy;
+	var unicodeEscaped;
+	var unicodeCharLength;
+	for (; stringCount > maxlimit; ) {
+		//get the last char in the string
+		last_char = curval.charAt(curval.length-1);
+		if (last_char == '\n') {
+			//check if the second to last is a \r and yank that too
+			secondToLast_char = curval.charAt(curval.length-2);
+
+			if (secondToLast_char == '\r') {
+				curval = curval.substring(0, curval.length-2);
+			}
+			else {
+				curval = curval.substring(0, curval.length-1);
+			}
+			//line breaks need to be handled as 2 characters
+			stringCount = stringCount - 2;
+		}
+		else {
+			//character, pull it
+			//figure out how many units to decriment the count by
+			if (isUnicode) {
+				unicodeEscaped = unescape( encodeURIComponent( last_char ) );
+				unicodeCharLength = unicodeEscaped.length;
+				stringCount = stringCount - unicodeCharLength;
+			}
+			else {
+				stringCount = stringCount - 1;
+			}
+
+
+			curval = curval.substring(0, curval.length-1);
+		}
+
+	}
+	// All done, field data is cut down to size. Save it.
+	return curval;
+
+
+}
+
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function maxlength( field, maxlimit, leftCountSpan ) {
+	var ret = true;
+	var scrollDown = false;
+	var characterCount = realLength(field.value);
+	var stringCopy;
+	var isUnicode;
+
+	// Check max field length. Now modified to also take Oracle 4000B limit into account.
+    if ( characterCount > maxlimit ) {
+      	stringCopy = field.value;
+      	isUnicode = false;
+      	field.value = trimToSize (stringCopy, characterCount, maxlimit, isUnicode);
+
+		characterCount = realLength(field.value); //update the charCount since we've altered the string
+        scrollDown = true;
+        ret = false;
+    }
+
+    var utf8 = unescape( encodeURIComponent( field.value ) );
+    var unicodeCharacterCount = realLength(utf8);
+    if (unicodeCharacterCount > 4000) {
+      stringCopy = field.value;
+      isUnicode = true;
+      var maxBytes = 4000;
+      field.value = trimToSize(stringCopy, unicodeCharacterCount, maxBytes, isUnicode);
+
+      characterCount = realLength(field.value); //update the charCount since we've altered the string
+      utf8 = unescape( encodeURIComponent( field.value ) );
+      unicodeCharacterCount = realLength(utf8); //update the unicodeCharCount since we've altered the string
+      ret = false;
+      scrollDown = true;
+    }
+
+    if (scrollDown) {
+        field.scrollTop = field.scrollHeight;
+    }
+
+    // Find # left if caller wants to know
+	if (leftCountSpan) {
+	    var left1 = maxlimit - characterCount;
+		var left2 = 4000 - unicodeCharacterCount;
+		var left = (left1 < left2 ? left1 : left2);
+
+		$j("#"+leftCountSpan).html(left);
+    }
+    return ret;
+}
+
+function noNumbers(e) {
+    var keynum, keychar, numcheck;
+    if(window.event) keynum = e.keyCode; // IE
+    else if(e.which) keynum = e.which; // Netscape/Firefox/Opera
+    keychar = String.fromCharCode(keynum);
+    numcheck = /\d/;
+    return !numcheck.test(keychar);
+}
+
+function onlyNumbers(e) {
+    return !noNumbers(e);
+}
+
+function decodeText(text) {
+	return $j("<div/>").html(text).text();
+}
+
+</script>
+
+<script type="application/x-javascript">
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+function hideURLbar(){
+window.scrollTo(0,1);
+}
+</script>
+<!-- iPhone Scripts introduced for parent access -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script language="JavaScript" type="text/javascript" src="/admin/JavaScript/validate_date.js"></script>
+
+<link rel="shortcut icon" href="/favicon.ico" >
+
+
+</head>
+<body id="parentPageTemp" class="psparent">
+
+<div class="mask" id="panel_requestInProcess_mask"></div>
+<div id="container" class="group">
+
+<!-- start of shell for entire page  -->
+<!-- start logo, school, term, logoff, help -->
+<div id="header" class="group">
+		<ul id="tools">
+			<li id="userName" title=" (Last Sign In:&nbsp;04/21/2016 at 11:40 AM ended normally.)">Welcome, 
+			<!-- Render either the guardian name or the student name. Guardian name is rendered by the brij tag above -->
+			<span>
+			
+				Steven Julian Holguin
+			
+			</span>
+		  </li>
+		<li><a href="javascript:helpwindow('/public/help/how_to/pa_03a_grades_attendance.html')" title="Help">Help</a></li>
+		<li><a href="home.html?ac=logoff" id="btnLogout" target="_top" title="Sign Out" accesskey="l">Sign Out</a></li>
+</ul>
+ <div id="branding-powerschool">
+   <a href="/guardian/home.html" tabindex="0">&nbsp;</a>
+ </div>
+ <div id="cust-content-header"></div>  
+</div>
+<div id="print-school">KIPP NYC<br><span>KIPP NYC College Prep</span></div>
+<!-- end logo, school, term, logoff, help -->
+<div id="usercontext-bar" class="group">
+	<a href="/guardian/home.html" id="linkBrandingHome" target="_top"></a>
+<!-- PA-73: Render list of associated students if  the user is a guardian -->
+	
+		<div id="students-list" style="width:75%">&nbsp;</div>
+	
+
+	<ul id="tools2">
+		
+
+<li class="icon-btn-pluginLinkList">
+    <a id="link-icon-btn-pluginLinkList" title="Applications" href="#" onclick="toggleDrawerPanel('pluginLinkDrawerPanel', 'pluginLinkDrawerModalOverlay', 'expanded'); return false;">&nbsp;</a>
+</li>
+
+		
+		
+		
+		
+		<li id="notifIcon"><a href="/guardian/notification/notificationDetailAJAX.action" onclick="return false;" target="_top" id="btnNotifications" class="dialogC" title="Notifications">&nbsp;</a></li>
+
+		<li class="icon-btn-print" title="Print this page"><a href="javascript:window.print()">&nbsp;</a></li>
+	</ul>
+</div>
+
+<div id="content" class="group">
+<div id="nav-main">
+	<h3>Navigation</h3>
+	<ul>
+		<li id="btn-gradesAttendance"><a href="home.html">Grades and Attendance</a></li>
+		
+		<li id="btn-gradesHistory"><a href="termgrades.html">Grade History</a></li>
+		<li id="btn-attendanceHistory"><a href="attendance.html">Attendance History</a></li>
+		
+		<li id="btn-teacherComments"><a href="teachercomments.html">Teacher Comments</a></li>
+		<li id="btn-schoolBulletin"><a href="/guardian/bulletin_popup.html" class="dialogM" title="View School Bulletin">School Bulletin</a></li>
+		<li id="btn-classRegistration"><a href="requestform.html">Class Registration</a></li>
+	
+		    <li id="btn-balance"><a href="lunchbal.html">Balance</a></li>
+		
+		<li id="btn-myCalendars"><a href="mycalendars.html">My Calendars</a></li>
+		<li id="btn-mySchedule"><a href="/guardian/myschedule.html">My Schedule</a></li>
+		<li id="btn-schoolInformation"><a href="/guardian/schoolinformation.html">School Information</a></li>
+		
+		
+		
+		
+	</ul>
+	<div id="cust-leftnav-footer"></div>
+	<iframe frameBorder="0" scrolling="no" allowtransparency="true" src="https://powersource.pearsonschoolsystems.com/public/ios/powerschool_student.html?districtCode=FTZZ" width="100%" height="150"></iframe>
+	
+</div>
+<div id="content-main" class="group">
+
+
+
+<!-- start of tabs -->
+<ul class="tabs" id="nav-secondary">        
+		<li class="selected">
+           <a href="#">Grades&nbsp;and&nbsp;Attendance</a>
+        </li>
+</ul>
+<!-- end of tabs -->
+
+
+<h1>Grades and Attendance: Holguin, Steven Julian</h1>
+<!-- start student content -->
+<div id="quickLookup">
+
+
+
+
+
+
+	
+		
+	
+
+
+
+<table class="grid">
+<tr><th class="center" colspan="25">Attendance By Class</th></tr>
+<tr class="center th2">
+<th rowspan="2">Exp</th>
+<th colspan="5">Last Week</th><th colspan="5">This Week</th><th rowspan="2">Course</th>
+<th rowspan="2">Q1</th>
+<th rowspan="2">Q2</th>
+<th rowspan="2">Q3</th>
+<th rowspan="2">Q4</th>
+<th rowspan="2">F1</th>
+<th rowspan="2">Y1</th>
+<th rowspan="2">Absences</th>
+<th rowspan="2">Tardies</th>
+</tr>
+<tr class="center th2">
+<th title="Mon, Apr 11, 2016 :  A">M</th><th title="Tue, Apr 12, 2016 :  B">T</th><th title="Wed, Apr 13, 2016 :  A">W</th><th title="Thu, Apr 14, 2016 :  A">H</th><th title="Fri, Apr 15, 2016 :  B">F</th><th title="Mon, Apr 18, 2016 :  A">M</th><th title="Tue, Apr 19, 2016 :  B">T</th><th title="Wed, Apr 20, 2016 :  B">W</th><th title="Thu, Apr 21, 2016 :  A">H</th><th title="Fri, Apr 22, 2016 :  B">F</th></tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_801688">
+<td>S(A-B)</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>T</td><td>&nbsp;</td><td>&nbsp;</td><td>ALM</td><td>&nbsp;</td><td>&nbsp;</td>
+<td align="left">Attendance Swipe-In&nbsp;<br><a href="teacherinfo.html?frn=0051211&nolink=true" title="Details about Capellan, Carlos" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:ccapellan@kippnyc.org">Capellan, Carlos</a>&nbsp;-&nbsp;Rm: Lobby</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004797839&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004797839&fg=Y1">--</a></td>
+<td><a href="attendancedates.html?frn=004797839&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td><a href="attendancedates.html?frn=004797839&codes=*tar&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_793374">
+<td>1(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">Global History 2&nbsp;<br><a href="teacherinfo.html?frn=0053622&nolink=true" title="Details about Escajeda, Taylor" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:tescajeda@kippnyc.org">Escajeda, Taylor</a>&nbsp;-&nbsp;Rm: 308</td>
+<td><a href="scores.html?frn=031777730&fg=Q1">C-<br>72</a></td>
+<td><a href="scores.html?frn=031799460&fg=Q2">C<br>76</a></td>
+<td><a href="scores.html?frn=031835095&fg=Q3">C+<br>78</a></td>
+<td><a href="scores.html?frn=004789525&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">A<br>96</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004789525&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">B-<br>80</a></td>
+<td><a href="attendancedates.html?frn=004789525&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_791861">
+<td>2(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">AP Spanish Language&nbsp;<br><a href="teacherinfo.html?frn=005637&nolink=true" title="Details about Godwin, Mary" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:mgodwin@kippnyc.org">Godwin, Mary</a>&nbsp;-&nbsp;Rm: 210</td>
+<td><a href="scores.html?frn=031775314&fg=Q1">C-<br>71</a></td>
+<td><a href="scores.html?frn=031796391&fg=Q2">C<br>73</a></td>
+<td><a href="scores.html?frn=031836250&fg=Q3">C<br>76</a></td>
+<td><a href="scores.html?frn=004788012&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">F<br>50</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004788012&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">F**<br>68</a></td>
+<td><a href="attendancedates.html?frn=004788012&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_799042">
+<td>3(A)</td>
+<td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>&nbsp;</td><td>.</td>
+<td align="left">PE: Strength and Conditioning&nbsp;<br><a href="teacherinfo.html?frn=0051214&nolink=true" title="Details about DeFazio, Michael" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:mdefazio@kippnyc.org">DeFazio, Michael</a>&nbsp;-&nbsp;Rm: 311</td>
+<td><a href="scores.html?frn=031777098&fg=Q1">A<br>98</a></td>
+<td><a href="scores.html?frn=031798109&fg=Q2">A<br>100</a></td>
+<td><a href="scores.html?frn=031831564&fg=Q3">A<br>100</a></td>
+<td><a href="scores.html?frn=004795193&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004795193&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">A<br>99</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_797053">
+<td>4(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">Trigonometry/Algebra 2&nbsp;<br><a href="teacherinfo.html?frn=005628&nolink=true" title="Details about Leon, Jason" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:jleon@kippnyc.org">Leon, Jason</a>&nbsp;-&nbsp;Rm: 421</td>
+<td><a href="scores.html?frn=031779126&fg=Q1">C<br>75</a></td>
+<td><a href="scores.html?frn=031795365&fg=Q2">B<br>85</a></td>
+<td><a href="scores.html?frn=031831924&fg=Q3">A-<br>91</a></td>
+<td><a href="scores.html?frn=004793204&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">A-<br>92</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004793204&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">B<br>86</a></td>
+<td><a href="attendancedates.html?frn=004793204&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_797231">
+<td>5(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">Computer Science&nbsp;<br><a href="teacherinfo.html?frn=0051669&nolink=true" title="Details about Eiben, Jason" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:jeiben@kippnyc.org">Eiben, Jason</a>&nbsp;-&nbsp;Rm: 104</td>
+<td><a href="scores.html?frn=031772095&fg=Q1">A<br>98</a></td>
+<td><a href="scores.html?frn=031797721&fg=Q2">A<br>96</a></td>
+<td><a href="scores.html?frn=031836216&fg=Q3">A-<br>91</a></td>
+<td><a href="scores.html?frn=004793382&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">A<br>94</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004793382&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">A<br>95</a></td>
+<td><a href="attendancedates.html?frn=004793382&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_794394">
+<td>6(A)</td>
+<td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>&nbsp;</td><td>.</td>
+<td align="left">Lunch A Day&nbsp;<br><a href="teacherinfo.html?frn=0051241&nolink=true" title="Details about Staff, KIPP NYC" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:collegeprep@kippnyc.org">Staff, KIPP NYC</a>&nbsp;-&nbsp;Rm: Cafeteria</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004790545&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004790545&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_791711">
+<td>7(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">English 2&nbsp;<a title="Section Teachers" class="dialogC" id="uniqueID" href="/guardian/coteach/showSectionTeachersAJAX.action?sectionId=34887&psPortal=guardian"> <img src="/images/img/coteach.png" width="16px" height="16px" /></a><br><a href="teacherinfo.html?frn=0053048&nolink=true" title="Details about Samuels, Monica" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:msamuels@kippnyc.org">Samuels, Monica</a>&nbsp;-&nbsp;Rm: 423</td>
+<td><a href="scores.html?frn=031774859&fg=Q1">B-<br>82</a></td>
+<td><a href="scores.html?frn=031800669&fg=Q2">C<br>73</a></td>
+<td><a href="scores.html?frn=031836334&fg=Q3">B<br>84</a></td>
+<td><a href="scores.html?frn=004787862&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">F<br>62</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004787862&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">C<br>76</a></td>
+<td><a href="attendancedates.html?frn=004787862&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_798407">
+<td>8(A-B)</td>
+<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td>ALM<br></td><td><br></td><td><br></td>
+<td align="left">Chemistry&nbsp;<br><a href="teacherinfo.html?frn=0053627&nolink=true" title="Details about Hart, Emily" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:ehart@kippnyc.org">Hart, Emily</a>&nbsp;-&nbsp;Rm: 416</td>
+<td><a href="scores.html?frn=031777877&fg=Q1">B-<br>81</a></td>
+<td><a href="scores.html?frn=031801133&fg=Q2">B-<br>81</a></td>
+<td><a href="scores.html?frn=031835645&fg=Q3">B<br>83</a></td>
+<td><a href="scores.html?frn=004794558&begdate=04/09/2016&enddate=06/10/2016&fg=Q4">C-<br>72</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004794558&begdate=08/17/2015&enddate=06/24/2016&fg=Y1">B-<br>80</a></td>
+<td><a href="attendancedates.html?frn=004794558&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_803375">
+<td>9(A-B)</td>
+<td>.</td><td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">Advisory 10&nbsp;<br><a href="teacherinfo.html?frn=0053623&nolink=true" title="Details about Ferenczy, Elizabeth" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:eferenczy@kippnyc.org">Ferenczy, Elizabeth</a>&nbsp;-&nbsp;Rm: 212</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004799526&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004799526&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_814308">
+<td>KB1(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: Global History 2&nbsp;<br><a href="teacherinfo.html?frn=0053622&nolink=true" title="Details about Escajeda, Taylor" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:tescajeda@kippnyc.org">Escajeda, Taylor</a>&nbsp;-&nbsp;Rm: 308</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004810459&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004810459&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_813160">
+<td>KB2(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: AP Spanish Language&nbsp;<br><a href="teacherinfo.html?frn=005637&nolink=true" title="Details about Godwin, Mary" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:mgodwin@kippnyc.org">Godwin, Mary</a>&nbsp;-&nbsp;Rm: 210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004809311&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004809311&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_815376">
+<td>KB4(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: Trigonometry/Algebra 2&nbsp;<br><a href="teacherinfo.html?frn=005628&nolink=true" title="Details about Leon, Jason" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:jleon@kippnyc.org">Leon, Jason</a>&nbsp;-&nbsp;Rm: 421</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004811527&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004811527&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_815476">
+<td>KB5(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: Computer Science&nbsp;<br><a href="teacherinfo.html?frn=0051669&nolink=true" title="Details about Eiben, Jason" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:jeiben@kippnyc.org">Eiben, Jason</a>&nbsp;-&nbsp;Rm: 104</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004811627&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004811627&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_813030">
+<td>KB7(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: English 2&nbsp;<br><a href="teacherinfo.html?frn=0053048&nolink=true" title="Details about Samuels, Monica" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:msamuels@kippnyc.org">Samuels, Monica</a>&nbsp;-&nbsp;Rm: 423</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004809181&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004809181&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_816070">
+<td>KB8(A-B)</td>
+<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+<td align="left">KB: Chemistry&nbsp;<br><a href="teacherinfo.html?frn=0053627&nolink=true" title="Details about Hart, Emily" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:ehart@kippnyc.org">Hart, Emily</a>&nbsp;-&nbsp;Rm: 416</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004812221&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004812221&fg=Y1">--</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#edf3fe" id="ccid_800934">
+<td>3(B)</td>
+<td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>ALM</td><td>.</td><td>&nbsp;</td>
+<td align="left">Study Hall  (Half Yr. A/B)&nbsp;<br><a href="teacherinfo.html?frn=0053048&nolink=true" title="Details about Samuels, Monica" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:msamuels@kippnyc.org">Samuels, Monica</a>&nbsp;-&nbsp;Rm: Cafeteria</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004797085&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004797085&fg=Y1">--</a></td>
+<td><a href="attendancedates.html?frn=004797085&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr class="center" bgcolor="#ffffff" id="ccid_796209">
+<td>6(B)</td>
+<td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>&nbsp;</td><td>.</td><td>&nbsp;</td><td>ALM</td><td>.</td><td>&nbsp;</td>
+<td align="left">Lunch B Day&nbsp;<br><a href="teacherinfo.html?frn=0051241&nolink=true" title="Details about Staff, KIPP NYC" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:collegeprep@kippnyc.org">Staff, KIPP NYC</a>&nbsp;-&nbsp;Rm: Cafeteria</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004792360&fg=Q4">--</a></td>
+<td>&nbsp;</td>
+<td><a href="scores.html?frn=004792360&fg=Y1">--</a></td>
+<td><a href="attendancedates.html?frn=004792360&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></td>
+<td>0</td>
+</tr>
+<tr>
+<th class="right" colspan="18">Attendance Totals</th>
+<th><a href="attendancedatesall.html?frn=~(frn)&codes=*abs&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">9</a></th>
+<th><a href="attendancedatesall.html?frn=~(frn)&codes=*tar&term=Q4&mode=ATT_ModeMeeting&mode=ATT_ModeInterval">1</a></th>
+</tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tr>
+<td align="center">Current Current Term GPA (Q4): 2.22</td>
+</tr>
+<tr>
+<td align="center"><a href="home.html?showdropped=true&20612861182318576051">Show dropped classes also</a></td>
+</tr>
+</table>
+
+
+<table class="center grid">
+<tr><th class="center" colspan="25">Attendance By Day</th></tr>
+<tr class="center th2">
+<th colspan="5">Last Week</th><th colspan="5">This Week</th><th colspan="2" class="bold">Absences</th>
+<th colspan="2" class="bold">Tardies</th>
+</tr>
+<tr class="center th2">
+<th title="Mon, Apr 11, 2016 :  A">M</th><th title="Tue, Apr 12, 2016 :  B">T</th><th title="Wed, Apr 13, 2016 :  A">W</th><th title="Thu, Apr 14, 2016 :  A">H</th><th title="Fri, Apr 15, 2016 :  B">F</th><th title="Mon, Apr 18, 2016 :  A">M</th><th title="Tue, Apr 19, 2016 :  B">T</th><th title="Wed, Apr 20, 2016 :  B">W</th><th title="Thu, Apr 21, 2016 :  A">H</th><th title="Fri, Apr 22, 2016 :  B">F</th><th>Q4</th>
+<th>YTD</th>
+<th>Q4</th>
+<th>YTD</th>
+</tr>
+<tr class="center" bgcolor="#edf3fe">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>T</td><td>&nbsp;</td><td>&nbsp;</td><td>ALM</td><td>&nbsp;</td><td>&nbsp;</td>
+<td><a href="attendancedates.html?codes=*abs&term=Q4&mode=ATT_ModeDaily">1</a></td>
+<td><a href="attendancedates.html?codes=*abs&mode=ATT_ModeDaily">2</a></td>
+<td><a href="attendancedates.html?codes=*tar&term=Q4&mode=ATT_ModeDaily">1</a></td>
+<td><a href="attendancedates.html?codes=*tar&mode=ATT_ModeDaily">2</a></td>
+</tr>
+<tr>
+<th class="right" colspan="10">Attendance Totals</th>
+<th><a href="attendancedates.html?codes=*abs&term=Q4&mode=ATT_ModeDaily">1</a></th>
+<th><a href="attendancedates.html?codes=*abs&mode=ATT_ModeDaily">2</a></th>
+<th><a href="attendancedates.html?codes=*tar&term=Q4&mode=ATT_ModeDaily">1</a></th>
+<th><a href="attendancedates.html?codes=*tar&mode=ATT_ModeDaily">2</a></th>
+</tr>
+</table>
+
+
+
+
+
+
+</div>
+<!-- end student content -->
+<!-- legend-->
+<div id="legend" class="group">
+<h3>Legend</h3>
+	<p><strong>Attendance Codes: </strong>&nbsp; Blank=Present<span class="disclaimer"> | </span> PNS=Present - Did Not Scan<span class="disclaimer"> | </span> A=Unexcused Absence<span class="disclaimer"> | </span> APN=Absence - Pending Note<span class="disclaimer"> | </span> ALM=Unexcused Absence - Left Message<span class="disclaimer"> | </span> ANC=Unexcused Absence - No Contact<span class="disclaimer"> | </span> CI=Coming In Later - Must Check In At Office<span class="disclaimer"> | </span> EA=Excused Absence<span class="disclaimer"> | </span> EAE=Excused Absence - Extenuating Circumstances<span class="disclaimer"> | </span> T=Unexcused Tardy<span class="disclaimer"> | </span> VT=Unexcused Very Tardy (Missed 30%+)<span class="disclaimer"> | </span> ET=Excused Tardy<span class="disclaimer"> | </span> EVT=Excused Very Tardy (Missed 30%+)<span class="disclaimer"> | </span> C=Counseling<span class="disclaimer"> | </span> CC=College Counseling<span class="disclaimer"> | </span> D=Deans<span class="disclaimer"> | </span> O=Office<span class="disclaimer"> | </span> N=Nurse's office<span class="disclaimer"> | </span> FT=Field Trip<span class="disclaimer"> | </span> ED=Unexcused Early Departure<span class="disclaimer"> | </span> EED=Excused Early Departure<span class="disclaimer"> | </span> ISD=In School Detention<span class="disclaimer"> | </span> ISS=In School Suspension<span class="disclaimer"> | </span> OSS=Out of School Suspension with Alternate Instruction<span class="disclaimer"> | </span> SNS=Suspension No Show<span class="disclaimer"> | </span> NS=No Scan - Follow Up Required<span class="disclaimer"> | </span> ALT=Alternative Instruction<span class="disclaimer"> | </span> APT=Absence Pending Transfer<span class="disclaimer"> | </span> EKB80=Excused from KB - 80%<span class="disclaimer"> | </span> EKBArts=Excused from KB - Arts<span class="disclaimer"> | </span> EKBAth=Excused from KB - Athletics<span class="disclaimer"> | </span> EKBCC=Excused from KB - College/Career<span class="disclaimer"> | </span></p>
+	<p><strong>Citizenship Codes: </strong>&nbsp; E=Excellent<span class="disclaimer"> | </span> G=Good<span class="disclaimer"> | </span> S=Satisfactory<span class="disclaimer"> | </span> N=Needs Improvement<span class="disclaimer"> | </span> U=Unsatisfactory<span class="disclaimer"> | </span></p>
+</div>
+
+<input id="activeNav" type="hidden" value="#btn-gradesAttendance"/>
+<div id="cust-content-footer"></div>
+</div>
+<div id="print-disclaimer">
+DISCLAIMER: This system is provided as a convenience. Grades and other information provided by this system are not official records and may or may not be accurate. Neither this institution nor Pearson Education, Inc or its affiliates accepts any responsibility for information provided by this system and/or for any damages resulting from information provided by this system. For official grades and student records contact your school.
+</div>
+<!--end content-->
+<!-- end of shell for entire page -->
+<!-- Start of copyright table -->
+</div>
+</div>
+<!--end container-->
+<div id="master-drawer-content-div">
+    
+	
+
+<style type="text/css">
+.rightSideDrawerPanel .content, .rightSideDrawerPanel.buttonless .content, .rightSideDrawerPanel .button-row, .rightSideDrawerPanel h1 {
+    width: 500px;
+}
+</style>
+<div id="pluginLinkDrawerPanel" class="rightSideDrawerPanel collapsed buttonless">
+    <div class="content">
+        <h1>Applications <span><button id="pluginLinkDrawerPanelBtnClose" onclick="toggleDrawerPanel('pluginLinkDrawerPanel', 'pluginLinkDrawerModalOverlay', 'collapsed'); return false;">Close</button></span></h1>
+        <div class="box-round">
+    <table id="pluginLinkDrawerTable" class="linkDescList">
+        <colgroup><col/><col/></colgroup>
+        <thead>
+            <tr>
+                <th>Applications</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="/guardian/openid/oidredirectaction.action?pluginName=One%20Call%20Now%20-%20Single%20Sign%20On&linkId=21" title="A Single Sign On Provider for One Call Now" id="link-3b0faec006143044711747b9c88fd97d"  target="_blank">One Call Now - Single Sign On</a></td>
+                <td>A Single Sign On Provider for One Call Now</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+        <div class="doorProp"></div>
+    </div>
+</div>
+<div id="pluginLinkDrawerModalOverlay" class="drawerModalOverlay"></div>
+
+</div>
+<div id="footer">
+	<div id="legal">
+  <p>Copyright&copy; 2005 - 2014 Pearson Education, Inc., or its affiliate(s). All rights reserved.</p>
+</div>
+
+</div>
+
+<!-- End of copyright table -->
+
+<!--<iframe style="height:0px;width:0px;visibility:hidden" src="javascript:false" id="disablecache"></iframe>-->
+<link rel="stylesheet" type="text/css" href="/scripts/yui/2.7.0/container/assets/container.css">
+<script type="text/javascript" src="/scripts/yui/2.7.0/utilities/utilities.js"></script>
+<!--utilities includes: yahoo, event, connnection, dragdrop, animation, element, get, yuiloader-->
+<script src="/scripts/yui/2.7.0/container/container-min.js" type="text/javascript"></script>
+
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.div_popup.loading"] = "Loading";_messages["psx.js.scripts.div_popup.close"] = "Close";_messages["psx.js.scripts.div_popup.close1"] = "Close";_messages["psx.js.scripts.div_popup.close2"] = "Close";_messages["psx.js.scripts.div_popup.loading1"] = "Loading";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.http_errors.status_code_message_"] = "Status Code Message: ";_messages["psx.js.scripts.http_errors.http_status_"] = "HTTP Status: ";_messages["psx.js.scripts.http_errors.403_forbidden"] = "403 Forbidden";_messages["psx.js.scripts.http_errors.503_service_unavailable"] = "503 Service Unavailable";_messages["psx.js.scripts.http_errors.500_internal_server_error"] = "500 Internal Server Error";_messages["psx.js.scripts.http_errors.408_request_timeout"] = "408 Request Timeout";_messages["psx.js.scripts.http_errors.404_page_not_found"] = "404 Page Not Found";_messages["psx.js.scripts.http_errors.request_timed_out"] = "Request Timed Out!";_messages["psx.js.scripts.http_errors.http_header"] = "HTTP Header:";_messages["psx.js.scripts.http_errors.error_encountered_retrieving_content"] = "Error encountered retrieving content.";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+
+<script src="/scripts/div_popup.js" type="text/javascript"></script>
+
+
+<!--YUI SCRIPTS-->
+<script type="text/javascript" src="/scripts/yui/2.7.0/utilities/utilities.js"></script>
+<script type="text/javascript" src="/scripts/yui/2.7.0/datasource/datasource-min.js"></script>
+<script type="text/javascript" src="/scripts/yui/2.7.0/paginator/paginator-min.js"></script>
+<script type="text/javascript" src="/scripts/yui/2.7.0/json/json-min.js"></script>
+
+<script type="text/javascript" src="/scripts/yui/2.7.0/button/button-min.js"></script>
+<script type="text/javascript" src="/scripts/yui/2.7.0/datatable/datatable-min.js"></script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.SortStack.resorting_based_on_saved_criteria_"] = "Re-sorting based on saved criteria ...";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type="text/javascript" src="/scripts/SortStack.js"></script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.ajaxprogress.your_request_is_being_processed"] = "Processing Request...";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type="text/javascript" src="/scripts/ajaxprogress.js"></script>
+<script type="text/javascript" src="/scripts/glowbutton.js"></script>
+
+</body>
+</html>
