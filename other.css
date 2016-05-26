@@ -12,10 +12,10 @@ html {
 h1 {
   color:#000066;
   text-align: center;
-  border: 5px groove red;
+  border: 5px solid red;
   border-radius: 15px 50px;
-  background: #73AD21;
+  background: #ff8080;
   padding: 20px; 
   width: 200px;
-  height: 150px;
+  height: 50px;
 }
