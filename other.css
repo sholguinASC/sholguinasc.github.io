@@ -23,3 +23,7 @@ h1 {
   left: 30px;
   margin-left: 100px;
 }
+#title {
+  text-align: center;
+}
+}
