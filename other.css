@@ -4,6 +4,10 @@ body {
 #emoji {
 	display: inline-block;
 }
+#header {
+    position:absolute;
+    text-align:center;
+}
 h1 {
   color:#000066;
   text-align: center;
@@ -13,6 +17,9 @@ h1 {
   padding: 20px; 
   font-family: "Comic Sans MS";
   display: inline-block;
+  margin:auto;
+  line-height:51px;
+  vertical-align:middle;
 }
 #primary_nav_wrap
 {
