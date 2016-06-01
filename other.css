@@ -1,12 +1,14 @@
 body {
- background-color: #0066ff;
+ background-color: white;
 }
 #emoji {
 	display: inline-block;
 }
 #header {
-    position:absolute;
     text-align:center;
+}
+#first_section {
+	background-color: #0066ff;
 }
 h1 {
   color:#000066;
