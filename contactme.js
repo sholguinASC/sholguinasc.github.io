@@ -1,42 +1,32 @@
-// Input Lock
-$('textarea').blur(function () {
-    $('#hire textarea').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('textarea + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('textarea + label + span').css({'opacity': 0});
-        }
-    });
-});
+$(document).ready(function(){
+$("#email").focus(function(){
+	$("#cuboid form").addClass("ready");
+})
+//remove '.ready' when user blus away but only if there is no content
+$("#email").blur(function(){
+	if($(this).val() == "")
+		$("#cuboid form").removeClass("ready");
+})
 
-$('#hire .field:first-child input').blur(function () {
-    $('#hire .field:first-child input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 0});
-        }
-    });
-});
+//If the user is typing something make the arrow green/.active
+$("#email").keyup(function(){
+	//this adds .active class only if the input has some text
+	$(".submit-icon").toggleClass("active", $(this).val().length > 0);
+})
 
-$('#hire .field:nth-child(2) input').blur(function () {
-    $('#hire .field:nth-child(2) input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-        }
-    });
-});
+//on form submit remove .ready and add .loading to the form
+$("#cuboid form").submit(function(){
+	$(this).removeClass("ready").addClass("loading");
+	//finish loading in 3s
+	setTimeout(complete, 3000);
+	//prevent default form submisson
+	return false;
+})
+function complete()
+{
+	$("#cuboid form").removeClass("loading").addClass("complete");
+}
+//reset/refresh functionality
+$(".reset-icon").click(function(){
+	$("#cuboid form").removeClass("complete");
+})
