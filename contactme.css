@@ -1,192 +1,80 @@
-// Grid
-@mixin grid($column) {
-	  width:(100% / 12) * $column;
-	  margin:0 auto;
-}
+/*Custom fonts - Sniglet and FontAwesome*/
+@import url('http://fonts.googleapis.com/css?family=Sniglet');
+@import url('http://thecodeplayer.com/uploads/fonts/font-awesome-4.1.0/css/font-awesome.min.css');
 
-// Transition Ease
-@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
-	  -webkit-transition: $attr $time $curve;
-	  -moz-transition: $attr $time $curve;
-	  -o-transition: $attr $time $curve;
-	  -ms-transition: $attr $time $curve;
-	  transition: $attr $time $curve;
-}
-
-//-- Lato --//
-@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
-@mixin lato-1-i {@include lato-1; font-style:italic;}
-
-@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
-@mixin lato-3-i {@include lato-3; font-style:italic;}
-
-@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
-@mixin lato-4-i {@include lato-4; font-style:italic;}
-
-@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
-@mixin lato-7-i {@include lato-7; font-style:italic;}
-
-@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
-@mixin lato-9-i {@include lato-9; font-style:italic;}
-
-
-// Colors
-$blue:#313A3D;
-$orange:#FD9638;
-$dark-orange:darken($orange, 20%);
-$grey:#B6B6B6;
-$light-grey:lighten($grey, 15%);
-
-$background:#efefef;
-$field-color:#E8E9EA;
-
-
-
-
-
+* {margin: 0; padding: 0;}
 body {
-	  background:$background;
-	  font-size:62.5%;
-	  @include lato-3;
-	  color:$grey;
-
-  section {
-	    background:white;
-    margin:60px auto 120px;
-    border-top:15px solid $blue;
-    text-align:center;
-  	  padding:50px 0 110px;
-    width:80%;
-    max-width:1100px;
-    
-    h1 {
-      margin-bottom:40px;
-      font-size:4em;
-      text-transform:uppercase;
-      @include lato-1;
-    }
-  }
+	background: hsl(120, 40%, 60%);
+	padding-top: 150px;
+	font: normal 18px Sniglet; color: white; text-align: center;
 }
 
-// Form
-form {
-		  @include grid(7);
+/*general styles*/
+h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
+.fun-cube i {transform: scale(10); opacity: 0.1;}
 
-		  .field {
-			    width:100%;
-			    position:relative;
-			    margin-bottom:15px;
+#cuboid {
+	width: 400px; margin: 0 auto;
+	/*this also makes #cuboid a container for absolutely positioned descendants*/
+	perspective: 1000px;
+}
+#cuboid form {
+	/*counter translate*/
+	transform: translateZ(-20px);
+	/*propogate 3d space for children*/
+	transform-style: preserve-3d;
+	/*prevent height collapse as children are absolutely positioned*/
+	height: 40px;
+	/*for smooth animations*/
+	transition: all 0.35s;
+}
 
-    			$hover-label-width:18%;
-			    $placeholder-bumper:1.5%;
-			    $label-padding:18px;
+/*faces*/
+.cuboid-text {
+	/*each face will be 40px high*/
+	line-height: 40px; height: 40px;
+	background: hsl(120, 40%, 20%);
+}
+.loader {
+	background: hsl(120, 40%, 30%);
+	animation: phase 1s infinite;
+}
+/*Lets create a pulsating animation for the loader face*/
+@keyframes phase {
+	50% {background: hsl(120, 70%, 30%);}
+}
+#email {
+	background: white; outline: none; border: 0 none;
+	font: inherit; text-align: left; color: hsl(120, 40%, 30%);
+	display: block; width: 100%; padding: 0 10px;
+	box-sizing: border-box;
+}
+#submit {display: none;}
 
-    			// Label
-			    label {
-				      text-transform: uppercase;
-				      position:absolute;
-				      top:0;
-				      left:0;
-				      background:$blue;
-				      width:100%;
-				      padding:($label-padding + 0px) 0;
-				      font-size: 1.45em;
-				      letter-spacing: 0.075em;
+.submit-icon, .reset-icon {
+	position: absolute; top: 0; right: 0;
+	color: rgba(0, 0, 0, 0.25);
+	line-height: 40px; padding: 0 10px;
+	/*smooth transitions when user activates input and types something*/
+	transition: all 0.5s;
+	/*to make the icons feel like buttons*/
+	cursor: pointer;
+}
+/*.active = when the user is typing something*/
+.submit-icon.active {color: hsl(120, 40%, 30%);}
+.reset-icon {color: rgba(255, 255, 255, 0.25); font-size: 14px;}
 
-				      @include ease(333ms);
+#cuboid div {position: absolute; top: 0; left: 0; width: 100%;}
+/*3D transforms. Each face will be rotated in multiples of -90deg and moved 20px(half of their 40px height) out*/
+#cuboid div:nth-child(1) {transform: rotateX(0deg) translateZ(20px);}
+#cuboid div:nth-child(2) {transform: rotateX(-90deg) translateZ(20px);}
+#cuboid div:nth-child(3) {transform: rotateX(-180deg) translateZ(20px);}
+#cuboid div:nth-child(4) {transform: rotateX(-270deg) translateZ(20px);}
 
-				      // Checkmark
-				      + span {
-					        font-family: 'SSStandard';
-					        opacity: 0;
-					        color:white;
-				        	display: block;
-					        position:absolute;
-					        top: 12px;
-					        left: 7%;
-					        font-size: 2.5em;
-					        text-shadow:1px 2px 0 $dark-orange;
+/*the form will have 4 states/classes(default+3) for rotation*/
+#cuboid form:hover, 
+#cuboid form.ready {transform: translateZ(-20px) rotateX(90deg);}
+#cuboid form.loading {transform: translateZ(-20px) rotateX(180deg);}
+#cuboid form.complete {transform: translateZ(-20px) rotateX(270deg);}
 
-					        @include ease(333ms);
-			      	}
-			    }
 
-    			// Fields
-		    	input[type="text"],
-			    textarea {
-				      border:none;
-				      background:$field-color;
-				      width:100% - $hover-label-width - $placeholder-bumper;
-				      margin:0;
-				      padding:$label-padding 0;
-				      padding-left:$hover-label-width + $placeholder-bumper;
-				      color:$blue;
-				      font-size: 1.4em;
-				      letter-spacing: 0.05em;
-				      text-transform: uppercase;
-
-				      &#msg {
-					        height: 18px;
-					        resize: none;
-					        @include ease(333ms);
-				      }
-
-      				// Focus and JS Toggle Class
-				      &:focus,
-				      &.focused {
-					        outline:none;
-
-        					&#msg {
-						          padding-bottom:150px;
-					        }
-
-        					+ label {
-						          width:$hover-label-width;
-						          background:$orange;
-						          color:$blue;
-					        }
-				      }
-
-      				// JS Toggle Class
-				      &.focused {
-					        + label {
-						          color: $orange;
-					        }
-				      }
-			    }
-
-    			// Field Hover
-			    &:hover {
-				      label {
-					        width:$hover-label-width;
-					        background:$blue;
-					        color:white;
-				      }
-			    }
-		  }
-
-		  // Submit Button
-		  input[type="submit"] {
-			    background:$orange;
-			    color:white;
-			    -webkit-appearance: none;
-			    border: none;
-			    text-transform: uppercase;
-    position:relative;
-		    padding: 13px 50px;
-		    font-size: 1.4em;
-		    letter-spacing: 0.1em;
-		    @include lato-3;
-		    @include ease;
-        
-    			&:hover {
-				      background:$blue;
-				      color:$orange;
-			    }
-
-    			&:focus {
-				      outline:none;
-				      background:$dark-orange;
-			    }
-		  }
-	}
