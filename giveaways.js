@@ -1,4 +1,7 @@
 $(document).ready(function(){
+$( "#p4_pic" ).hide();
+$( "#xone_pic" ).hide();
+$( "#6s_pic" ).hide();
 $("#p4").mouseover(function(){
     $("#p4_pic").fadeIn();
 });
