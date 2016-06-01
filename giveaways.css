@@ -38,3 +38,8 @@
 	position:relative;
 	top:1px;
 }
+button {
+	display: block;
+	text-align: center;
+}
+}
