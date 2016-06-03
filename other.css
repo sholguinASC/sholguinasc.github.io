@@ -102,8 +102,9 @@ h1 {
 #copyright {
 	width:100%;
 	background-color:#5c5c3d;
-	display: block;
+	position: absolute;
 	bottom: 0;
+	height: 30px;
 }
 h3 {
 	color: white;
