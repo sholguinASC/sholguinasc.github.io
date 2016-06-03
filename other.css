@@ -99,3 +99,14 @@ h1 {
 {
 	display:block
 }
+#copyright {
+	width:100%;
+	background-color:#5c5c3d;
+	display: block;
+	bottom: 0;
+}
+h3 {
+	color: white;
+}
+}
+}
