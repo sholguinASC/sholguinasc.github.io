@@ -101,7 +101,7 @@ h1 {
 }
 #copyright {
 	width:100%;
-	background-color:#ccccb3;
+	background-color:#adad85;
 	position: absolute;
 	bottom: 0;
 	height: 50px;
@@ -110,6 +110,7 @@ h3 {
 	color: white;
 	position: absolute;
 	bottom: 0;
+	text-align:center;
 }
 }
 }
