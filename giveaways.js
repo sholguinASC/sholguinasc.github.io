@@ -21,4 +21,4 @@ $(document).ready(function(){
     $("#6s").mouseout(function(){
         $("#6s_pic").css("display","none");
     });
-});
+})
