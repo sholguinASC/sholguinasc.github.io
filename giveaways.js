@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(document).ready(function(){
     //
     $("#p4").mouseover(function(){
         $("#p4_pic").css("display","block");
