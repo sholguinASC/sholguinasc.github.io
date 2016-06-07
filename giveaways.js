@@ -1,10 +1,8 @@
 $(document).ready(function(){
-    //
-    $("#p4").mouseover(function(){
+$("#p4").mouseover(function(){
         $("#p4_pic").css("display","block");
         console.log("#p4 element mouseover");
     });
-    
     $("#p4").mouseout(function(){
         $("#p4_pic").css("display","none");
     });
