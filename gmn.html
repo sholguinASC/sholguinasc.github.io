@@ -4,16 +4,19 @@
 		<title>Guess My Number!</title>
 		<meta charset=”UTF-8”>
 		<meta name=”content” keywords=””>
-		//include link tag for your css, script tags for your .js and jquery files
+		<link rel="stylesheet" type="text/css" href="gmn.css">
+	        <script type="text/javascript" src="gmn.js"></script>
+	        <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
 	</head>
 	<body>
 		<h1>I’m thinking of a number between 1 and 100…</h1>
 		<h3>Try to guess it!</h3>
 		<form>
-			//create an input element with a specific name here
+			Guess Number:<br>
+			<input type="text" name="guess"><br>
 		</form><br>
-		//create a button here with the id=”submit”
-		//create a button here with the id=”clear”
+		<button>Submit</button>
+		<button>Clear</button>
 		<div id=”response”></div>
 	</body>
 </html
