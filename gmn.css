@@ -31,4 +31,6 @@ button:active {
 button{
 	display:inline-block;
 }
-     
+body {
+	background-color:#4d94ff;
+}
