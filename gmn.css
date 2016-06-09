@@ -28,7 +28,7 @@ button:active {
 	position:relative;
 	top:1px;
 }
-button{
+.buttons{
 	display:inline-block;
 }
 body {
