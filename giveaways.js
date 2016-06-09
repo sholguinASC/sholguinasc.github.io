@@ -1,6 +1,6 @@
 $(document).ready(function(){
         $("#p4").mouseover(function(){
-                $("#p4_pic").css("display","block");
+                $("#p4_pic").css("display","block").fadeIn(500);
                 $("body").css("background-color","#00b2ee");
         });
         $("#p4").mouseout(function(){
@@ -8,7 +8,7 @@ $(document).ready(function(){
                 $("body").css("background-color","#ff6666");
         });
         $("#xone").mouseover(function(){
-                $("#xone_pic").css("display","block");
+                $("#xone_pic").css("display","block").fadeIn(500);
                 $("body").css("background-color","#00aa50");
         });
             
@@ -17,7 +17,7 @@ $(document).ready(function(){
                 $("body").css("background-color","#ff6666");
         });
         $("#6s").mouseover(function(){
-                $("#iphone").css("display","block");
+                $("#iphone").css("display","block").fadeIn(500);
                 $("body").css("background-color","#5f68a3");
         });
             
