@@ -1,28 +1,29 @@
 $(document).ready(function(){
+        $("#p4_pic").hide();
+        $("#xone").hide();
+        $("#6s").hide();
         $("#p4").mouseover(function(){
-                $("#p4_pic").css("display","block").fadeIn();
-                $("body").css("background-color","#00b2ee");
+                $("#p4_pic").fadeIn();
+                $("body").css("background-color","#0000A3");
         });
         $("#p4").mouseout(function(){
-                $("#p4_pic").css("display","none");
-                $("body").css("background-color","#ff6666");
+                $("#p4_pic").fadeOut();
         });
         $("#xone").mouseover(function(){
-                $("#xone_pic").css("display","block").fadeIn();
+                $("#xone_pic").fadeIn();
                 $("body").css("background-color","#00aa50");
         });
             
         $("#xone").mouseout(function(){
-                $("#xone_pic").css("display","none");
-                $("body").css("background-color","#ff6666");
+                $("#xone_pic").fadeOut();
         });
         $("#6s").mouseover(function(){
-                $("#iphone").css("display","block").fadeIn();
-                $("body").css("background-color","#5f68a3");
+                $("#iphone").fadeIn();
+                $("body").css("background-color","#C96E6E");
         });
             
         $("#6s").mouseout(function(){
-                $("#iphone").css("display","none");
-                $("body").css("background-color","#ff6666");
+                $("#iphone").fadeOut();
+
         });
 })
