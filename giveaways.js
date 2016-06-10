@@ -3,11 +3,11 @@ $(document).ready(function(){
         $("#xone_pic").hide();
         $("#iphone").hide();
         $("#p4").mouseover(function(){
-                $("#p4_pic").fadeIn();
+                $("#p4_pic").slideDown();
                 $("body").css("background-color","#0000A3");
         });
         $("#p4").mouseout(function(){
-                $("#p4_pic").fadeOut("fast");
+                $("#p4_pic").slideUp();
         });
         $("#xone").mouseover(function(){
                 $("#xone_pic").fadeIn();
