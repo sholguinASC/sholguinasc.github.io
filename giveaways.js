@@ -7,7 +7,7 @@ $(document).ready(function(){
                 $("body").css("background-color","#0000A3");
         });
         $("#p4").mouseout(function(){
-                $("#p4_pic").fadeOut();
+                $("#p4_pic").fadeOut("fast");
         });
         $("#xone").mouseover(function(){
                 $("#xone_pic").fadeIn();
@@ -15,7 +15,7 @@ $(document).ready(function(){
         });
             
         $("#xone").mouseout(function(){
-                $("#xone_pic").fadeOut();
+                $("#xone_pic").fadeOut("fast");
         });
         $("#6s").mouseover(function(){
                 $("#iphone").fadeIn();
@@ -23,7 +23,7 @@ $(document).ready(function(){
         });
             
         $("#6s").mouseout(function(){
-                $("#iphone").fadeOut();
+                $("#iphone").fadeOut("fast");
 
         });
 })
