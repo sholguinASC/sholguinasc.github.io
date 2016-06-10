@@ -10,20 +10,20 @@ $(document).ready(function(){
                 $("#p4_pic").slideUp();
         });
         $("#xone").mouseover(function(){
-                $("#xone_pic").fadeIn();
+                $("#xone_pic").slideDown();
                 $("body").css("background-color","#00aa50");
         });
             
         $("#xone").mouseout(function(){
-                $("#xone_pic").fadeOut("fast");
+                $("#xone_pic").slideUp();
         });
         $("#6s").mouseover(function(){
-                $("#iphone").fadeIn();
+                $("#iphone").slideDown();
                 $("body").css("background-color","#C96E6E");
         });
             
         $("#6s").mouseout(function(){
-                $("#iphone").fadeOut("fast");
+                $("#iphone").slideUp();
 
         });
 })
