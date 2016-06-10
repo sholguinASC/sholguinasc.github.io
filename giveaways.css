@@ -64,4 +64,9 @@ button {
 	text-align: center;
 	margin-top: 15px;
 }
-
+h1 {
+	color:#e60000;
+	font-family: cursive;
+	font-variant: small-caps;
+	font-weight: bold;
+}
