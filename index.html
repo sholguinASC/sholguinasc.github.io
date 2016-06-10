@@ -4,13 +4,14 @@
     <title>Steven's Page</title>
     <link rel="stylesheet" type="text/css" href="other.css">
     <script src="jquery-2.2.3.min.js"></script>
+    <script src="typed.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <div id="first_section">
     <div id="header">
       <img id="emoji" src="https://www.quia.com/files/quia/users/sophiealix/Hocus_Lotus/bonjour" height="250" width="250">
-      <h1 id="title">Hey There</h1>
+      <h1 id="title" class="element"></h1>
       </div>
       <nav id="primary_nav_wrap">
   <ul>
@@ -49,5 +50,18 @@
 <div id="copyright">
   <center><h3>©2016 Steven Productions</h3></center>
 </div>
+ <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Hey There", "Welcome to my Website", "There is games", "a store", "and giveaways"],
+        typeSpeed: 0,
+        backSpeed: 0,
+        backDelay: 1000,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+  });
+  </script>
   </body>
 </html>
