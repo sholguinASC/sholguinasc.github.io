@@ -1,7 +1,7 @@
 $(document).ready(function(){
         $("#p4_pic").hide();
-        $("#xone").hide();
-        $("#6s").hide();
+        $("#xone_pic").hide();
+        $("#iphone").hide();
         $("#p4").mouseover(function(){
                 $("#p4_pic").fadeIn();
                 $("body").css("background-color","#0000A3");
