@@ -6,12 +6,6 @@ $(document).ready(function(){
     		var response= "<li>first"</li>";
     		$("#guesses").append(response);
     		$('#guess').val('');
-	}
-	$('.input').keypress(function(e) {
-        	if(e.which == 13) {
-            		jQuery(this).blur();
-            		jQuery('#submit').focus().click();
-        		}
     });
 	
 });
