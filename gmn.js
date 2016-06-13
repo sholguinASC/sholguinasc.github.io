@@ -7,7 +7,7 @@ $(document).ready(function(){
     		$("#guesses").append(response);
     		$('#guess').val('');
 	});
-	$('.input').keypress(function(e) {
+	$('#guess').keypress(function(e) {
         	if(e.which == 13) {
         	    jQuery(this).blur();
         	    jQuery('#submit').focus().click();
