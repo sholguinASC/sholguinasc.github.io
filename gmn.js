@@ -6,8 +6,6 @@ $(document).ready(function(){
     		var response= "<li>first"</li>";
     		$("#guesses").append(response);
     		$('#guess').val('');
-    });
-	
 });
 
 
