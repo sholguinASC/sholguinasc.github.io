@@ -43,9 +43,10 @@ body {
 	background-color: #2491f9;
 }
 h2 {
-	font-family: fantasy;
+	font-family: cursive;
 	color: white;
 	font-weight: normal;
 	font-size:200%;
-	
+	text-align:center;
+	text-decoration:underline;
 }
