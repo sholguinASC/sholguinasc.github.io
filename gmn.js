@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#response").empty();
 	var random_num = Math.floor((Math.random()*100) + 1);
 	var first = $("#guess").val();
 	//create click event for submit button
