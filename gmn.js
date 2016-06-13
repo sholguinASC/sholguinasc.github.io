@@ -20,7 +20,7 @@ $(document).ready(function(){
             } 
         else {
                   $("#response").append("<p>"+ first +"</p>");
-                  $("#response").append("<p>Your Guess is too high</p>");
+                  $("#response").append("<h1>Your Guess is too high</h1>");
                   $("#response").css("background-color","#FF3232");
             }
 	
