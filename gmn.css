@@ -37,7 +37,15 @@ body {
 #guess_list{
 	position: fixed;
 	left:0px;
-	top:5px;
-	width: 200px;
+	top:0px;
+	width: 300px;
 	height: 100%;
+	background-color: #2491f9;
+}
+h2 {
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	font-size:200%;
+	
 }
