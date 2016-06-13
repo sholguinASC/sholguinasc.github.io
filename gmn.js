@@ -7,11 +7,7 @@ $(document).ready(function(){
     		$("#guesses").append(response);
     		$('#guess').val('');
 	});
-	$('#guess').keypress(function(e) {
-        	if(e.which == 13) {
-        	    jQuery('#submit').focus().click();
-        	}
-	 });
+	
 });
 
 
