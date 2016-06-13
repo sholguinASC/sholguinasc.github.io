@@ -32,7 +32,7 @@ button:active {
 	display:inline-block;
 }
 body {
-	background-color:#cc99ff;
+	background-color:white;
 }
 #guess_list{
 	position: fixed;
@@ -56,4 +56,21 @@ p {
 	text-align:center;
 	color: red;
 	font-size:200%;
+}
+#main_part {
+	position: fixed;
+	top: 0px;
+	left:300px;
+	right:0px;
+	background-color:#cc99ff;
+	height:50%;
+}
+#response {
+	position: fixed;
+	bottom: 0px;
+	left:300px;
+	right:0px;
+	background-color:#fbd7d3;
+	height:50%;
+}
 }
