@@ -46,7 +46,14 @@ h2 {
 	font-family: cursive;
 	color: white;
 	font-weight: normal;
-	font-size:200%;
+	font-size:270%;
 	text-align:center;
 	text-decoration:underline;
+}
+li {
+	font-family:Georgia;
+	text-align:center;
+	color: red;
+	font-size:200%;
+}
 }
