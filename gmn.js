@@ -16,7 +16,7 @@ $(document).ready(function(){
 			$("#response").empty();
 		        $("#response").append("<h6>"+ first +"</h6>");
 		        $("#response").append("<h1>Good Job you guessed my number!</h1>");
-		        $("#response").delay(100).append("<h3>Do you want a cookie??</h3>");
+		        $("#response").delay(600).append("<h3>Do you want a cookie??</h3>");
 		        $("#response").css("background-color","#00CD00");
                  } 
 		 else if (first < random_num) {
