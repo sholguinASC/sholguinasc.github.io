@@ -3,10 +3,10 @@ $(document).ready(function(){
 	var random_num = Math.floor((Math.random()*100) + 1);
 	//create click event for submit button
 	$("#submit").click(function(){
-		var start = 0;
+		var count = 0;
     		var first = $("#guess").val();
     		var response= "<p>" + first + "</p>";
-    		var count = start +1;
+    		var count = count +1;
     		var guesses = "<h5>So far "+ count +" guesses</h5>"
     		$("#guess_list").append(response);
     		$('#guess').val('');
