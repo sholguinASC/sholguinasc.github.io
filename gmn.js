@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$("#submit").click(function(){
     		var first = $("#guess").val();
     		var response= "<li>Guess:" + first + "</li>";
-    	$("#guesses").append(response);
+    		$("#guesses").append(response);
+    		$('#guess').val('');
   });
 });
 
