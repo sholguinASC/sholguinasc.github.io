@@ -3,7 +3,7 @@ $(document).ready(function(){
 	//create click event for submit button
 	$("#submit").click(function(){
     		var first = $("#guess").val();
-    		var response= "<li>first</li>";
+    		var response= "<li>"" + first</li>";
     		$("#guesses").append(response);
     		$('#guess').val('');
 	});
