@@ -8,17 +8,20 @@ $(document).ready(function(){
     		$('#guess').val('');
 	});
 	if (first == random_num) {
+		$("#response").empty();
               $("#response").append("<p>"+ first +"</p>");
               $("#response").append("<h1>Good Job you guessed my number!</h1>");
               $("#response").delay(100).append("<h3>Do you want a cookie??</h3>");
               $("#response").css("background-color","#00CD00");
             } 
         else if (first < random_num) {
+        	$("#response").empty();
                 $("#response").append("<p>"+ first +"</p>");
                 $("#response").append("<h1>Your Guess is too low</h1>");
                 $("#response").css("background-color","#FF3232");
             } 
         else {
+        	$("#response").empty();
                   $("#response").append("<p>"+ first +"</p>");
                   $("#response").append("<h1>Your Guess is too high</h1>");
                   $("#response").css("background-color","#FF3232");
