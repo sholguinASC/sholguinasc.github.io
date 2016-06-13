@@ -34,3 +34,10 @@ button:active {
 body {
 	background-color:#cc99ff;
 }
+#guess_list{
+	position: fixed;
+	left:0px;
+	top:5px;
+	width: 50px;
+	height: 100px;
+}
