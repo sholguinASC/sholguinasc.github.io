@@ -12,6 +12,7 @@ $(document).ready(function(){
     		$('#guess').val('');
     		$( "h5" ).remove();
     		$("#main_part").append(guesses);
+    		$("#guess").focus()
 		if (first == random_num) {
 			$("#response").empty();
 		        $("#response").append("<h6>"+ first +"</h6>");
