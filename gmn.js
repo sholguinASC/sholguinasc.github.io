@@ -2,8 +2,8 @@ $(document).ready(function(){
 	$("#response").empty();
 	var random_num = Math.floor((Math.random()*100) + 1);
 	//create click event for submit button
+	var count = 0;
 	$("#submit").click(function(){
-		var count = 0;
     		var first = $("#guess").val();
     		var response= "<p>" + first + "</p>";
     		var count = count +1;
