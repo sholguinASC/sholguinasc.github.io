@@ -111,5 +111,12 @@ h3 {
 	color: white;
 	text-align:center;
 }
+#alert {
+	display: inline-block;
+	text-align: center;
+	border: 2px solid yellow;
+	width: 100px;
+	height: 40px;
+}
 }
 }
