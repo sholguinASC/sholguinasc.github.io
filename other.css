@@ -115,8 +115,9 @@ h3 {
 	display: inline-block;
 	text-align: center;
 	border: 2px solid yellow;
-	width: 100px;
-	height: 40px;
+	width: 400px;
+	height: 80px;
+	background: grey;
 }
 }
 }
