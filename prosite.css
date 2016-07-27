@@ -5,12 +5,23 @@ h1 , img {
   width:150px;
   height:250px;
 }
-
+div {
+  width:100%;
+  display:block;
+}
 h1 {
   text-size:200%;
   color: #33cc33;
 }
 #first_section {
-  height:1000px;
+  height:600px;
   background-color:#66ccff;
+}
+#second_section {
+  height:600px;
+  background-color:#66ff33;
+}
+#third_section {
+  height:600px;
+  background-color:#ffff4d;
 }
