@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steven's Page</title>
+    <link rel="stylesheet" type="text/css" href="other.css">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="typed.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <img id="emoji" src="https://pixabay.com/static/uploads/photo/2013/07/12/16/50/stickman-151357_960_720.png">
+  <h1 id="element"></h1>
+  <script>
+  $(function(){
+      $("#element").typed({
+        strings: ["Steven Holguin"],
+        typeSpeed: 0,
+        backSpeed: 0,
+        backDelay: 1000,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+  });
+  </script>
+</body>
+</html>
