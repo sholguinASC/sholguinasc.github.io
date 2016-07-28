@@ -2,18 +2,21 @@ h1 , img {
   text-align:center;
 }
 #emoji{
-  position: fixed;
-  top: 60px;
+  position: relative;
+  top: 80px;
   width:150px;
   height:250px;
 }
 div {
   width:100%;
-  display:block;
+  display:inline-block;
 }
 h1 {
   text-size:200%;
-  color: #33cc33;
+  color: #FF0000;
+  position: relative;
+  top:70px;
+  display:block;
 }
 #first_section {
   height:600px;
