@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("#submit").click(function(){
     		var first = $("#guess").val();
     		var response= "<p>" + first + "</p>";
-    		var count = count +1;
+    		count ++;
     		var guesses = "<h5>So far "+ count +" guesses</h5>"
     		$("#guess_list").append(response);
     		$('#guess').val('');
