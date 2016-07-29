@@ -13,9 +13,8 @@ body {
 h1 {
   color:#000066;
   text-align: center;
-  border: 2px solid green;
   border-radius: 6px 50px;
-  background: #ccff66;
+  background: #bbeeff;
   padding: 20px; 
   font-family: "Comic Sans MS";
   display: inline-block;
