@@ -111,14 +111,6 @@ h3 {
 	color: white;
 	text-align:center;
 }
-#alert {
-	display: inline-block;
-	text-align: center;
-	border: 2px solid yellow;
-	width: 400px;
-	height: 80px;
-	background: grey;
-}
 #prosite {
 	text-decoration:none;
 }
