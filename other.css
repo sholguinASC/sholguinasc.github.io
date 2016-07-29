@@ -60,12 +60,12 @@ h1 {
 
 #primary_nav_wrap ul li.current-menu-item
 {
-	background:#ddd
+	background:#99ccff
 }
 
 #primary_nav_wrap ul li:hover
 {
-	background:#99ccff
+	background:#77aaff
 }
 
 #primary_nav_wrap ul ul
