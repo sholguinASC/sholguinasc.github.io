@@ -112,7 +112,9 @@ h3 {
 	text-align:center;
 }
 #prosite {
-	text-decoration:none;
+	text-align: center;
+	display:relative;
+	bottom: 70px;
 }
 #prosite:hover {
 	color:#ff3333;
