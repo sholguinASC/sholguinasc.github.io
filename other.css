@@ -1,5 +1,5 @@
 body {
- background-color: white;
+ background-color: #bbeeff;
 }
 #emoji {
 	display: inline-block;
@@ -8,7 +8,7 @@ body {
     text-align:center;
 }
 #first_section {
-	background-color: #0066ff;
+	background-color: #3366ff;
 }
 h1 {
   color:#000066;
@@ -65,7 +65,7 @@ h1 {
 
 #primary_nav_wrap ul li:hover
 {
-	background:#f6f6f6
+	background:#99ccff
 }
 
 #primary_nav_wrap ul ul
@@ -102,7 +102,7 @@ h1 {
 }
 #copyright {
 	width:100%;
-	background-color:#adad85;
+	background-color:#3366ff;
 	position: absolute;
 	bottom: 0;
 	height: 50px;
