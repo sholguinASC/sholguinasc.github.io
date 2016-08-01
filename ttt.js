@@ -9,7 +9,7 @@ function draw(){
   for (i = 0; i<3; i++){
     for (a = 0; a<3; a++){
       fill(252)
-      rect([a * 200],[i * 1],199,199)
+      rect([a * 200],[i * 200],199,199)
     }
   }
 }
