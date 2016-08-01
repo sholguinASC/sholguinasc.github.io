@@ -3,7 +3,7 @@ function setup(){
 }
 
 function draw(){
-  background(255,255,255)
+  background(155,255,200)
   var i
   var a
   for (i = 0; i>3; i++){
