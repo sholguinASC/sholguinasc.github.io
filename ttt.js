@@ -23,7 +23,6 @@ function setup(){
     }
   }
 }
-}
 
 //function draw(){
 
