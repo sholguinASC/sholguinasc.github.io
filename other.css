@@ -22,6 +22,7 @@ h1 {
   line-height:51px;
   vertical-align:middle;
   height:50px;
+  border:1px solid black;
 }
 #primary_nav_wrap
 {
