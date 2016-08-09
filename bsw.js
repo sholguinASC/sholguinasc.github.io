@@ -14,4 +14,19 @@ $(document).ready(function(){
 			door_state = true;
 		}
 	});
+	var on = "img/portfolio/idea.png";
+	var off = "img/portfolio/idea(1).png";
+	var light_state = true;
+	$("#door").click(function(){
+		if (door_state == true) {
+			$("#light1_img").remove();
+			$("#light1").append("<img id='door_img' src='" + on + "' class='img-responsive'>");
+			light_state = false;
+		}
+		else {
+			$("#light1_img").remove();
+			$("#light1").append("<img id='door_img' src='" + off + "' class='img-responsive'>");
+			light_state = true;
+		}
+	});
 });
