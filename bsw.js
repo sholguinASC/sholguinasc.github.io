@@ -14,8 +14,8 @@ $(document).ready(function(){
 			door_state = true;
 		}
 	});
-	var on = "img/portfolio/idea.png";
-	var off = "img/portfolio/idea(1).png";
+	var on = "img/portfolio/light_on.png";
+	var off = "img/portfolio/light_off.png";
 	var light1_state = true;
 	$("#light1").click(function(){
 		if (light1_state == true) {
