@@ -16,17 +16,17 @@ $(document).ready(function(){
 	});
 	var on = "img/portfolio/idea.png";
 	var off = "img/portfolio/idea(1).png";
-	var light_state = true;
-	$("#door").click(function(){
-		if (door_state == true) {
+	var light1_state = true;
+	$("#light1").click(function(){
+		if (light1_state == true) {
 			$("#light1_img").remove();
 			$("#light1").append("<img id='door_img' src='" + on + "' class='img-responsive'>");
-			light_state = false;
+			light1_state = false;
 		}
 		else {
 			$("#light1_img").remove();
 			$("#light1").append("<img id='door_img' src='" + off + "' class='img-responsive'>");
-			light_state = true;
+			light1_state = true;
 		}
 	});
 });
