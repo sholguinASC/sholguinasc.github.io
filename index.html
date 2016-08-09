@@ -1,68 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Steven's Page</title>
-    <link rel="stylesheet" type="text/css" href="other.css">
-    <script src="jquery-2.2.3.min.js"></script>
-    <script src="typed.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-  </head>
-  <body>
-    <div id="first_section">
-    <div id="header">
-      <img id="emoji" src="https://www.quia.com/files/quia/users/sophiealix/Hocus_Lotus/bonjour" height="250" width="250">
-      <h1 id="title" class="element"></h1>
-      </div>
-      <nav id="primary_nav_wrap">
-  <ul>
-    <li class="current-menu-item"><a href="https://sholguinasc.github.io">Home</a></li>
-    <li><a href="#">Games</a>
-      <ul>
-        <li><a href="./gmn.html">Guess My Number</a></li>
-        <li><a href="./memory.html">Hang Man</a></li>
-        <li><a href="./ttt.html">Tic Tac Toe</a></li>
-        <li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=stevenholguin&ProjectName=Arcade">Arcade</a></li>
-      </ul>
-    </li>
-    <li><a href="./giveaways.html">Giveaways</a></li>
-    <li><a href="./bsw.html">Steven's Store</a>
-      <ul>
-        <li class="dir"><a href="#">Electronics</a></li>
-        <li class="dir"><a href="#">Clothes</a>
-          <ul>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Pants</a></li>
-            <li><a href="#">Sneakers</a></li>
-            <li><a href="#">Hats</a></li>
-            <li><a href="#">Accesories</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Toys and Games</a></li>
-        <li><a href="#">Home Improvement</a></li>
-        <li><a href="#">Gift Cards</a></li>
-      </ul>
-    </li>
-    <li><a href="./contactme.html">News Letter</a></li>
-    <li><a href="./contactsteven.html">Contact Steven</a></li>
-  </ul>
-</nav>
-</div>
-<a href="./prosite.html"><p id="prosite">Steven's Second Website</p></a>
-<div id="copyright">
-  <center><h3>©2016 Steven Productions</h3></center>
-</div>
- <script>
-  $(function(){
-      $(".element").typed({
-        strings: ["Hey There", "Welcome to my Website", "There is games", "a store", "and giveaways"],
-        typeSpeed: 0,
-        backSpeed: 0,
-        backDelay: 1000,
-        loop: true,
-        showCursor: true,
-        cursorChar: "|",
-      });
-  });
-  </script>
-  </body>
+<head>
+    <title>B.S.W Household</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="BSW.js"></script>
+    <link rel="stylesheet" type="text/css" href="BSW.css">
+</head>
+<body id="page-top" class="index">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>B.S.W Household</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div id="door" class="col-sm-4 portfolio-item" class="img-responsive">
+                    <h2>Door</h2>
+                    <img id="door_img" src="img/portfolio/lock.png" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/portfolio/cake.png" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/portfolio/circus.png" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/portfolio/game.png" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/portfolio/safe.png" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/portfolio/submarine.png" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
