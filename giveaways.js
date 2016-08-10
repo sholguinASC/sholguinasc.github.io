@@ -4,14 +4,14 @@ $(document).ready(function(){
         $("#iphone").hide();
         $("#p4").mouseover(function(){
                 $("#p4_pic").slideDown();
-                $("body").css("background-color","#0000A3");
+                $("body").css("background-color","#4d94ff");
         });
         $("#p4").mouseout(function(){
                 $("#p4_pic").slideUp();
         });
         $("#xone").mouseover(function(){
                 $("#xone_pic").slideDown();
-                $("body").css("background-color","#00aa50");
+                $("body").css("background-color","#47d147");
         });
             
         $("#xone").mouseout(function(){
@@ -19,7 +19,7 @@ $(document).ready(function(){
         });
         $("#6s").mouseover(function(){
                 $("#iphone").slideDown();
-                $("body").css("background-color","#C96E6E");
+                $("body").css("background-color","#ffcce6");
         });
             
         $("#6s").mouseout(function(){
