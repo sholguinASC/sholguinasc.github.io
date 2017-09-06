@@ -22,3 +22,7 @@ button:active {
 .buttons{
 	display:inline-block;
 }
+body {
+    -moz-transform: scale(1.5); /* for Firefox, default 1*/
+    zoom:150%; /* For Chrome, IE, default 100%*/
+}
