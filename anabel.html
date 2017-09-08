@@ -9,6 +9,7 @@
 </head>
 <body style="background-color:#fcf014">
   <h1 style="color:blue;text-align:center;font-family: Comic Sans MS"><strong>Anabel My Love</strong></h1>
+	<center><h1 class="element"></h1></center>
  	<center>
 		<form>
 			The very important code Ms. Rosario received:<br>
@@ -17,5 +18,18 @@
 		<button id="submit">Submit</button>
 		<h5>Number of times Anabel tried to guess: 13</h5>
 		</center>
+	<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Anabel", "My Love", "My Princess", "My beautiful girl fren", "My darling"],
+        typeSpeed: 0,
+        backSpeed: 0,
+        backDelay: 1000,
+        loop: true,
+        showCursor: false,
+        cursorChar: "|",
+      });
+  });
+  </script>
 </body>
 </html>
