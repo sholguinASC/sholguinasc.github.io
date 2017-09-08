@@ -26,3 +26,6 @@ body {
     -moz-transform: scale(2.5); /* for Firefox, default 1*/
     zoom:250%; /* For Chrome, IE, default 100%*/
 }
+h1 {
+	height:30px;
+}
