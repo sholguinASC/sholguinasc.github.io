@@ -3,8 +3,8 @@
 body {
   font-family: 'Droid Serif', serif;
   font-size: 16px;
-  background: #54CDAC;
-  color: #fff;
+  background: #fffc4f;
+  color: #293fad;
 }
 cite {
   font-style: normal;
@@ -18,13 +18,13 @@ cite {
 .line-through {
 	display: block;
 	position: relative;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid blue;
 	height: 15px;
 }
 .line-through span {
 	position: absolute;
 	display: inline-block;
-	background: #54CDAC;
+	background: #fffc4f;
 	width: 200px;
 	margin-left: -100px;
 	line-height: 30px;
@@ -32,15 +32,15 @@ cite {
 .stripe-border {
 	background: linear-gradient(
 		to bottom,
-		#fff,
-		#fff 25%,
-		#54CDAC 25%,
-		#54CDAC
+		blue,
+		blue 25%,
+		#fffc4f 25%,
+		#fffc4f
 	);
 	background-size: 100% 8px;
 }
 .stripe-border blockquote {
-  background: #54CDAC;
+  background: #fffc4f;
 	margin: 0 10px;
 	padding: 30px;
 	font-size: 18px;
