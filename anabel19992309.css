@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+body {
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  background: #54CDAC;
+  color: #fff;
+}
+cite {
+  font-style: normal;
+}
+.quote {
+	margin: 30px;
+	text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.line-through {
+	display: block;
+	position: relative;
+	border-bottom: 2px solid #fff;
+	height: 15px;
+}
+.line-through span {
+	position: absolute;
+	display: inline-block;
+	background: #54CDAC;
+	width: 200px;
+	margin-left: -100px;
+	line-height: 30px;
+}
+.stripe-border {
+	background: linear-gradient(
+		to bottom,
+		#fff,
+		#fff 25%,
+		#54CDAC 25%,
+		#54CDAC
+	);
+	background-size: 100% 8px;
+}
+.stripe-border blockquote {
+  background: #54CDAC;
+	margin: 0 10px;
+	padding: 30px;
+	font-size: 18px;
+  font-size: 24px;
+  line-height: 1.5;
+}
