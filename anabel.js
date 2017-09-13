@@ -13,6 +13,7 @@ $(document).ready(function(){
 		     	$("#top_text").replaceWith(response);
           		$("body").css("background-color","#f71b1b");
 			$( "h5" ).replaceWith(tryAgain);
+			 $( "#code" ).blur();
  
 	         }
 	
