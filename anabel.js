@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$("#submit").click(function(){
     		var first = $("#code").val();
 		if (first == correct_code) {
-		        window.location = "sholguinasc.github.io/anabel19992309.html";
+		        window.location = "sholguinasc.github.io/anabel.html/#";
                  } 
 	         else {
 		     	$("#top_text").replaceWith(response);
