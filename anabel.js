@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var correct_code = "00000000";
-        var response= "<center><h1>No Bitch Your Wrong</h1></center>";
+        var response= "<center><h2>No Bitch Your Wrong</h2></center>";
 	var tryAgain = "<center><h5>Try again my fren</h5></center>";
 	//create click event for submit button
 	$("#submit").click(function(){
