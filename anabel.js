@@ -7,7 +7,7 @@ $(document).ready(function(){
     		var first = $("#code").val();
 		var second = first.toString();
 		if (second == correct_code) {
-		        window.location = "sholguinasc.github.io/anabel.html/#";
+		        window.location = "sholguinasc.github.io/anabel19992309.html";
                  } 
 	         else {
 		     	$("#top_text").replaceWith(response);
